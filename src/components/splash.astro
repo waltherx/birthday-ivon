@@ -1,16 +1,15 @@
 ---
-import { Image } from "astro:assets";
 import { Icon } from "astro-icon";
-import astronautImage from "~/assets/astronaut.png";
+import { Image } from "astro:assets";
+import astronautImage from "~/assets/peachrender1.webp";
 import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
-import GitHubCorner from "./github-corner.astro";
 
 const widths = [450, 800];
 const sizes = "(min-width: 640px) 42vw, 67vw";
 ---
 
-<section class="relative h-full bg-black">
+<section class="relative h-full bg-fuchsia-500">
   <Starfield />
  
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
@@ -22,11 +21,11 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     >
       <Icon name="logomark" class="h-24 text-white md:h-32" />
       <div
-        class="gradient-text text-center font-extrabold tracking-tighter text-8xl"
+        class="gradient-text text-center font-extrabold tracking-tighter text-6xl"
       >
-        Te invito 
-        <br /> Mi Cumple,
-        <br /> es 8 de dic.
+        Ivonne Damaris,
+        <br /> te invita a celebrar
+        <br /> mis 3 años!
       </div>
     </h2>
     <div
@@ -39,7 +38,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
         widths={widths}
         sizes={sizes}
         loading="eager"
-        alt="A floating astronaut in a space suit"
+        alt="princesa peach"
       />
     </div>
   </div>
